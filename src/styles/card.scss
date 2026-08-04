@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 40px;
 
-  box-sizing: border-box;
   width: 200px;
   min-height: 406px;
   margin: 0;
@@ -18,10 +17,10 @@
     margin: 0 auto;
     flex-shrink: 0;
 
-    background-image: url(../images/imac.jpeg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+    // background-image: url(../images/imac.jpeg);
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: contain;
   }
 
   &__header {
@@ -98,5 +97,27 @@
 
       color: $product-card-primary-color;
     }
+  }
+
+  &__button {
+    width: 166px;
+    min-height: 40px;
+    border: 0;
+    border-radius: 5px;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: $primary-color;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+  }
+  &__button:hover {
+    cursor: pointer;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    background-color: transparent;
   }
 }
