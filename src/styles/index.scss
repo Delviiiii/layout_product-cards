@@ -1,24 +1,10 @@
-@import './card';
+@import 'varriables';
+@import 'card';
+@import 'stars';
+@import 'purchase-button';
 
 body {
-  margin: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
-/* #region body */
-.stars {
-  display: flex;
-}
-
-.stars__star {
-  margin-right: 4px;
-  background-image: url(images/star.svg);
-  background-position: center;
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-}
-
-.stars--4 .stars__star:nth-child(-n + 4) {
-  background-image: url('./images/star-active.svg');
-}
-
-/* #endregion */
